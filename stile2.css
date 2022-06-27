@@ -1,0 +1,58 @@
+h1 {font-size: 30px}
+h3 {font-size: 20px}
+h5 {font-size: 15px}
+p {font-size: 15px; word-spacing: 1px;text-indent: 1px; font-family: "Times New Roman";}
+strong {font-size: 15px; font-weight: normal; font-family: 'Anek Latin'}
+ul {font-size: 13px}
+footer{font-size: 20px}
+body {
+ background-image: url("sfondo.jpg")
+}
+img{border: 1px solid black;margin: 0}
+address{font-size: 15px}
+
+/* gestione menu */
+a {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:20px;
+}
+
+nav.menu {
+	margin-top: 15px;
+	padding: 15px;
+	background: lightgray;
+}
+
+nav.menu a {
+	border: 1px dashed gray;
+	color: grey;
+	padding: 5px;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+
+
+/* link non ancora visitato */
+a:link {
+color: black;
+}
+/* link visitato */
+a:visited {
+color: black;
+}
+/* passaggio del mouse */
+a:hover {
+color: black;
+}
+/* durante il click */
+a:active {
+color: gray;
+}
+/* rende il menu fisso mentre si scorre la pagina
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+*/

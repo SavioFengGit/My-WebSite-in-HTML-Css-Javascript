@@ -1,0 +1,93 @@
+h1 {font-size: 30px}
+h3 {font-size: 20px}
+h5 {font-size: 15px}
+p {font-size: 15px; word-spacing: 1px;text-indent: 1px; font-family: "Times New Roman";}
+strong {font-size: 15px; font-weight: normal; font-family: 'Anek Latin'}
+ul {font-size: 13px}
+footer{font-size: 20px}
+body {
+ background-image: url("sfondo.jpg")
+}
+img{border: 1px solid black;margin: 0}
+address{font-size: 15px}
+
+/* gestione menu */
+a {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:20px;
+}
+
+nav.menu {
+	margin-top: 15px;
+	padding: 15px;
+	background: lightgray;
+}
+
+nav.menu a {
+	border: 1px dashed gray;
+	color: grey;
+	padding: 5px;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+
+
+/* link non ancora visitato */
+a:link {
+color: black;
+}
+/* link visitato */
+a:visited {
+color: black;
+}
+/* passaggio del mouse */
+a:hover {
+color: black;
+}
+/* durante il click */
+a:active {
+color: gray;
+}
+/* rende il menu fisso mentre si scorre la pagina
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+*/
+
+
+
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+.message {
+  display:none;
+  background: #f1f1f1;
+  color: red;
+  position: relative;
+  margin-left: 10px;
+  
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+	<link rel="stylesheet" type="text/css" href="stile2.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;300&display=swap" rel="stylesheet">
+    <title>Contattaci</title>
+</head>
+
+<body>
+	<header style="background: #AEC6CF;">
+		<img style="width: 70px; margin-right: 75px;" src="immagine.png">Assistenza PC
+		<nav>  
+			<a href="index.html">Home</a> |
+			<a href="chisiamo.html">Chi siamo</a> |
+			<a href="servizi.html">Servizi</a>	|
+			<a href="dovesiamo.html">Dove siamo</a>	|
+			<a href="contattaci.html">Contattaci</a> |		
+			<a href="iscriviti.html">Iscriviti</a> 				
+		</nav>
+	</header>
+	<section>
+		<h1>ASSISTENZA PC</h1>
+		<strong>Assistenza PC è un gruppo di persone appassionate al mondo dell’informatica, che offre servizi di assistenza, consulenza, etc. sui calcolatori elettronici. </strong>
+	</section>
+	<section>
+		<main style="float: left; width: 60%;">
+<h3><label>Motivazione per la quale ci vuole contattare: </label></h3>
+						
+	<input type="radio" name="Consulenza" value="Consulenza">
+		<label>Consulenza</label><br>
+
+    <input type="radio" name="Assistenza" value="Assistenza">
+		<label >Assistenza</label><br>
+    <input type="radio" name="Assemblaggio" value="Assemblaggio">
+		<label >Assemblaggio</label><br>
+	<input type="radio" name="Altro" value="Altro">
+		<label >Altro</label><br>
+			<article>
+				<h3>Per contattarci riempire il form seguente</h3> <br>
+<form action="/pagina_a_cui_inviare_i_dati.php" method="get"> <!--- action definisce dove mandare la submit   -->
+	<fieldset>
+		<legend>Scrivici</legend>
+<label>Nome: </label>
+<br>
+	<input type="text" id="nome" name="nome" required>
+		<br> <br>
+			<label>Cognome: </label>
+			<br>
+				<input type="text" id="cognome" name="cognome" required>
+					<br>
+						<br>
+						
+<label>Sesso: </label>
+<select id="genere" name="genere">
+ <option value="0">Uomo</option>
+ <option value="1">Donna</option>
+ <option value="2">Altro</option>
+</select>
+
+
+<br><br>						
+			<label>Email: </label>
+							<br>
+				<input type="email" id="email" name="email" required><br><br>
+			<label>Numero di telefono: </label>	 <br>
+				<input type="text" id="telefono" name="telefono" pattern="[1-3]{3}[0-9]{6}"> <br><br>
+			<label>Come preferisci essere contattato: </label>	<br>
+			<input type="checkbox" name="mail" value="mail">
+				<label> E-Mail</label><br>
+
+			<input type="checkbox" name="call" value="call">
+				<label> Chiamata telefonica</label><br>
+
+			<input type="checkbox" name="mex" value="mex">
+				<label> Messaggio Whatsapp</label><br>
+			
+			<br>
+			<label>Informazioni aggiuntive: </label>	<br>
+				<textarea name="message" rows="15" cols="60"></textarea> <br>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset"> 
+			<br>
+	</fieldset>
+</form>
+						
+		</main>
+	</section>
+	<footer style="clear: both;">
+		<h3><ul style="list-style-type:disc;"><br>
+		<h5>Contatti
+		
+<li>Telefono:333 938444x</li>
+<li>E-mail: info@email.x</li>
+<li>Sede: Via del Plebiscito 00186 Roma RM</li>
+</h5>
+</ul></h3>
+		<address>
+			Clicca qui e <a href="mailto:me@example.com">Contattaci</a>
+		</address>
+	</footer>
+
+
+</body>
+
+</html>

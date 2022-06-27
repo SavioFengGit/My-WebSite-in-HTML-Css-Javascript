@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://html5-templates.com/" />
+	<link rel="stylesheet" type="text/css" href="stile.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;300&display=swap" rel="stylesheet">
+	<meta charset=”utf-8”>	
+	<script src="codice_javascript.js"></script>
+</head>
+<body>
+<header style="background: #AEC6CF;">
+		<img style="width: 70px; margin-right: 75px;" src="immagine.png">Assistenza PC
+		<nav>  
+			<a href="index.html">Home</a> |
+			<a href="chisiamo.html">Chi siamo</a> |
+			<a href="servizi.html">Servizi</a>	|
+			<a href="dovesiamo.html">Dove siamo</a>	|  
+			<a href="contattaci.html">Contattaci</a> |		
+			<a href="iscriviti.html">Iscriviti</a> 
+		</nav>
+</header>
+<h3>Pagina di registrazione</h3>
+<p>Inserisci i dati richiesti</p>
+
+<div class="container">
+  <form action="ok_form.html">
+	  <label>Nome</label>
+	  <label id="msg_nome" class="message">campo obbligatorio</label>
+    <input type="text" id="nome" name="nome">
+	  	  
+	<label>Cognome</label>
+	  <label id="msg_cognome" class="message">campo obbligatorio</label>
+    <input type="text" id="cognome" name="cognome">
+	  
+    <label>Username</label>
+	  <label id="msg_username1" class="message">campo obbligatorio</label>
+	  <label id="msg_username2" class="message">lunghezza minima 6 caratteri</label>
+    <input type="text" id="username" name="username">
+
+    <label>Password</label>
+	  <label id="msg_pwd1" class="message">campo obbligatorio</label>
+	  <label id="msg_pwd2" class="message">lunghezza minima 8 caratteri</label>
+    <input type="password" id="pwd" name="pwd">
+    
+	<label>Conferma password</label>
+	  <label id="msg_cfpwd1" class="message">campo obbligatorio</label>
+	  <label id="msg_cfpwd2" class="message">password e conferma password non coincidono</label>
+    <input type="password" id="cfpwd" name="cfpwd">
+	  
+	  <label>Codice di verifica: Quanto fa: </label><label id="num1"></label>+<label id="num2"></label>
+	  <label id="msg_captcha" class="message">codice di verifica errato</label>
+	  <input type="text" id="captcha" name="captcha">
+	  
+    <input type="submit" value="Invia" onclick="return valida()">
+  </form>
+</div>
+<footer style="clear: both;">
+		<h3><ul style="list-style-type:disc;">
+		<h5>Contatti
+		
+<li>Telefono:333 938444x</li>
+<li>E-mail: info@email.x</li>
+<li>Sede: Via del Plebiscito 00186 Roma RM</li>
+</h5>
+</ul></h3>
+		<address>
+			Clicca qui e <a href="mailto:me@example.com">Contattaci</a>
+		</address>
+	</footer>
+</body>
+</html>
+<script>
+	var num1=Math.floor(Math.random() * 10);
+	var num2=Math.floor(Math.random() * 10);
+	
+	document.getElementById("num1").innerText=num1;
+	document.getElementById("num2").innerText=num2;
+</script>
